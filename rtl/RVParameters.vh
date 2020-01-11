@@ -1,0 +1,13 @@
+parameter  RV_ADDER    = 8'b0000_0001,  //Integer + or -
+           RV_MULDIV   = 8'b0000_1000,  //Integer * or /
+           RV_LOGIC    = 8'b0000_0010,  //xor 
+           RV_MEMORY   = 8'b0000_0011,  //load / store
+           RV_SHIFT    = 8'b0000_0100,  //shift *
+           RV_PREDICT  = 8'b0000_0101,  //Branch / Jump
+           RV_FPU      = 8'b0000_0110,  // 32 bit float
+         //RV_DPU      = 8'b0000_0111,  // 64bit double
+           RV_VECTOR   = 8'b0001_0000,
+           RV_ATOMIC   = 8'b0001_0001,
+           RV_CSR      = 8'b0001_0010,
+           RV_SYNC     = 8'b0001_0011, //Fench / Flush
+           RV_SYSTEM   = 8'b0001_0100; //ECALL
